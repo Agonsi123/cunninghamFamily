@@ -1,0 +1,1078 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Roboto", serif;
+}
+body{
+    background-color: rgb(241, 239, 232, 1);
+}
+.container{
+    background-color: rgb(241, 239, 232, 1);
+    padding: 2%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 95%;
+    background-color: rgba(255, 255, 255, 1);
+    margin: auto;
+}
+/* Style for header start */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 8%;
+    /* border: 1px solid red; */
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18.26px;
+    letter-spacing: 0.02em;
+}
+.active{
+    color: rgba(230, 58, 36, 1);
+    font-weight: 500;
+}
+.header-btn{
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(230, 58, 36, 1);
+    background-color: rgba(230, 58, 36, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 18.26px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+#bars{
+    display: none;
+}
+#mobileNav{
+    padding: 10px 0;
+    display: none;
+    border: 1px solid red;
+}
+#cancelNav{
+    float: right;
+    right: 10px;
+}
+.navbar .fa{
+    display: block;
+    color: red;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+/* header end */
+/* Responsiveness for Header start */
+@media (max-width: 500px) {
+    .navbar{
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        /* border-bottom: 0.01px solid red; */
+    }
+    
+    nav{
+        text-align: left;
+        flex: none;
+        background: #f0f0f0;
+        width: 91%;
+        position: absolute;
+        right: 16px;
+        top: 12%;
+    }
+    nav ul{
+        padding: 10px;
+    }
+    .logo img{
+        width: 60px;
+    }
+    header, nav .fa{
+        color: red;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    #bars{
+        display: inline;
+        position: absolute;
+        left: 80%;
+        top: 3%; 
+    }
+    .btn{
+        position: absolute;
+        top: 41.2%;
+        left: 4.5%;
+        width: 77.2%;
+        border-radius: 0;
+    }
+    #navLinks, .btn{
+        display: none;
+    }
+}
+/* Responsiveness for Header end */
+/* style for Banner start */
+
+.banner{
+    width: 95%;
+    margin: auto;
+    background-color: rgba(9, 11, 16, 0.74);
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.banner h1{
+    font-size: 3.375rem;
+    font-weight: 600;
+    line-height: 63.67px;
+    color: rgba(251, 251, 248, 1);
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+
+
+.banner h3{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 37.73px;
+    color: rgba(245, 245, 245, 1);
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+/* Banner ends */
+/* Hero section starts */
+.hero-container{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding: 4% 0;
+    background-color: rgba(255, 255, 255, 1);
+    /* border: 1px solid red; */
+}
+.hero-container h3{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 44.8px;
+    color: rgba(9, 11, 16, 0.8);
+    margin-bottom: 2%;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+.hero img{
+    border-radius: 10px;
+}
+.hero-btn{
+    text-decoration: none;
+    border: 2px solid rgba(230, 58, 36, 1);
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18.87px;
+    cursor: pointer;
+    letter-spacing: -0.04em;
+}
+.hero-btn:hover{
+    background-color: rgba(230, 58, 36, 1);
+    transition: 1s;
+    color: rgba(255, 255, 255, 1);
+}
+/* Hero section end */
+
+/* Responsiveness for banner and hero section start */
+@media (max-width: 500px) {
+    .banner{
+        width: 100%;
+        padding: 5% 0;
+        gap: 3.44px;
+    }
+    .banner h1{
+        font-size: 1.3rem;
+        line-height: 28.3px;
+    }
+    .banner h3{
+        font-size: 0.8rem;
+        line-height: 18.87px;
+    }
+    .hero-container{
+        width: 100%;
+        padding: 8% 0;
+        margin-top: 4%;
+    }
+    .hero-container h3{
+        font-size: 1.3rem;
+        line-height: 33.6px;
+    }
+    .hero{
+        margin-bottom: 8%;
+    }
+    .hero img{
+        width: 60%;
+    }
+    .hero .tourist{
+        width: 70%;
+    }
+    .hero-btn{
+        padding: 10px;
+        /* margin-top: 4%; */
+    }
+}
+
+/* Responsiveness for banner and hero section end */
+/* Key Services start */
+
+.service, .product, .choice, .plan, .testimonial{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.service, .product, .plan{
+    padding: 3% 0;
+}
+.service, .choice, .plan{
+    background-color: rgba(255, 255, 255, 1);
+}
+.product{
+    background-color: rgba(251, 250, 247, 0.84);
+}
+.service, .product, footer{
+    margin-top: 2%;
+}
+.service h2, .product h2, .choice h2, .plan h2, .testimonial h2{
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 42.45px;
+    color: rgba(9, 11, 16, 1);
+    letter-spacing: -0.04em;
+}
+.service h2, .product h2, .testimonial h2{
+    margin-bottom: 2%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    /* border: 1px solid red; */
+}
+
+.services-col{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 14px;
+    /* border: 1px solid blue; */
+}
+
+.services-col img, .product-col img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.services-col img{
+    width: 200px;
+    height: 140px;
+}
+
+.services-col h6, .product-col h6, .global h6{
+    font-size: 1.2rem;
+    line-height: 23.58px;
+    font-weight: 400;
+    color: rgba(9, 11, 16, 0.8);
+    letter-spacing: -0.04em;
+}
+
+.services-col p, .product-col p, .global p, .choice p{
+    letter-spacing: -0.04em;
+}
+
+.services-col p{
+    font-size: 0.875rem;
+    line-height: 16.51px;
+    font-weight: 400;
+    color: rgba(9, 11, 16, 0.7);
+}
+
+.carousel-container{
+    display: none;
+}
+
+/* Responsiveness for mobile view start */
+@media (max-width: 500px) {
+    .service{
+        display: none;
+    }
+    .carousel-container{
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 4%;
+        padding: 5% 0;
+    }
+    .carousel-container h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 33.6px;
+        color: rgba(9, 11, 16, 0.8);
+    }
+    .carousel-text{
+        margin-top: 10px;
+    }
+    .carousel-text h6{
+        font-size: 1rem;
+        /* font-weight: 400; */
+        line-height: 25.94px;
+        letter-spacing: -0.04em;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 5px;
+    }
+    .carousel-text p{
+        font-size: 0.875rem;
+        line-height: 18.51px;
+        font-weight: 400;
+        letter-spacing: -0.04em;
+        color: rgba(9, 11, 16, 0.8);
+    }
+    .indicator{
+        margin-top: 15px;
+    }
+    .indicator .dot{
+        height: 10px;
+        width: 10px;
+        background-color: rgba(191, 192, 194, 1);
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .dot.active{
+        background-color: rgba(69, 70, 72, 1);
+    }
+}
+
+/* Responsiveness for mobile view end */
+
+/* Key Services end */
+
+/* Premium product start */
+.product-col{
+    flex-basis: 35%;
+    margin: 0 12px;
+    padding: 35px;
+}
+
+.product-col img{
+    width: 230px;
+    height: 170px;
+}
+
+.product-col p{
+    font-size: 0.8rem;
+    line-height: 18.74px;
+    font-weight: 400;
+    color: rgba(9, 11, 16, 0.7);
+}
+/* Premium product end */
+
+/* Choice starts */
+
+.choice, .plan{
+    margin-top: 4%;
+}
+
+.choice{
+    padding-bottom: 0;
+    padding-top: 2%;
+}
+
+.choice p{
+    font-size: 1.5rem;
+    line-height: 28.3px;
+    font-weight: 400;
+    color: rgba(9, 11, 16, 0.8);
+}
+
+.choice-col{
+    display: flex;
+    flex-basis: 31%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.global{
+    text-align: left;
+    margin-top: 8%;
+}
+
+.global p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 18.87px;
+    color: rgba(9, 11, 16, 0.8);
+    padding-top: 1%;
+}
+
+.global img{
+    width: 170px;
+    margin-top: -45px;
+}
+
+.choice-col img{
+    height: 110px;
+}
+/* Choice ends */
+/* Testimonial starts */
+
+.testimonial p{
+    font-size: 1.25rem;
+    line-height: 26px;
+    font-weight: 500;
+    color: rgba(9, 11, 16, 0.7);
+    margin-bottom: 4%;
+    letter-spacing: 0.01em;
+}
+
+.scroll-container{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.scroll-images{
+    display: flex;
+    animation: scroll-horizontal 10s linear infinite;
+}
+
+.scroll-images .testimonial-col{
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 16px;
+    background: rgba(251, 251, 248, 1);
+    border-left: 1px solid rgba(9, 11, 16, 0.2);
+    border-right: 1px solid rgba(9, 11, 16, 0.2);
+    display: flex;
+    gap: 20px;
+    text-align: left;
+}
+
+.testimonial-col span{
+    font-size: 0.87rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16.97px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 160px;
+    letter-spacing: 0.01em;
+}
+
+.testifier{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testifier-name h6{
+    margin-top: 12px;
+    font-size: 1.25rem;
+    line-height: 24.24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.01em;
+}
+
+.testifier-name p{
+    font-size: 0.875rem;
+    line-height: 16.97px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.image img{
+    border-radius: 100%;
+    margin-right: 10px;
+    box-shadow: 0px 23px 30px 0px rgba(230, 58, 36, 0.25);
+}
+
+@keyframes scroll-horizontal{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Testimonial ends */
+
+/* Style for plan starts */
+
+.plan h2{
+    margin-top: -2%;
+}
+
+.plan-row{
+    padding: 0 2%;
+}
+
+.plan-col{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex-basis: 30%;
+    text-align: left;
+    padding: 0.6%;
+    margin-top: 1%;
+}
+
+.plan-col p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+}
+
+.plan-col p span{
+    font-size: 1rem;
+    line-height: 20.8px;
+}
+
+.plan-col img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.book{
+    display: flex;
+    gap: 37px;
+    padding: 0 2.5%;
+    margin-top: -2%;
+}
+
+.book p{
+    font-size: 1.25rem;
+    line-height: 23.58px;
+    font-weight: 400;
+    margin-top: 9px;
+    letter-spacing: -0.04em;
+}
+
+.book p span{
+    font-weight: 600;
+    color: rgba(230, 58, 36, 1);
+}
+
+.book-btn{
+    display: flex;
+    gap: 8px;
+    border: 0.4px solid rgba(230, 58, 36, 1);
+    padding: 14px 24px;
+    border-radius: 12px;
+    background-color: rgba(230, 58, 36, 1);
+    cursor: pointer;
+}
+
+.book-btn a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 1);
+    font-size: 1.125rem;
+    line-height: 21.6px;
+    font-weight: 600;
+}
+
+/* plan ends */
+/* Call to action starts */
+
+.cta{
+    width: 95%;
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13),rgba(0, 0, 0, 0.13)), url(./images/partnerImg.svg);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h1{
+    font-size: 3rem;
+    line-height: 56.6px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 0;
+    color: rgba(9, 11, 16, 1);
+    letter-spacing: -0.04em;
+}
+/* Call to action end */
+/* Footer start */
+footer{
+    background-color: rgba(230, 58, 36, 1);
+}
+
+.footer-row{
+    padding: 2% 16%;
+}
+
+.foot-one{
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+}
+
+.footer-logo img{
+    background-color: rgba(251, 251, 248, 1);
+}
+
+.footer-socials, .footer-nav, .support, .email, .email-col, .phone-row{
+    display: flex;
+}
+
+.footer-socials{
+    gap: 28px;
+}
+
+footer h5{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.footer-nav, .support, .email, .email-col{
+    flex-direction: column;
+}
+
+.footer-nav{
+    gap: 24px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+}
+
+.footer-nav a, footer p{
+    font-size: 0.875rem;
+    font-weight: 18.2px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.support{
+    gap: 40px;
+}
+
+.email{
+    gap: 17px;
+}
+
+.email-col{
+    gap: 6px;
+}
+
+.phone-row{
+    gap: 45px;
+}
+
+.copy-right h5{
+    text-align: center;
+    margin-top: -4%;
+    padding-bottom: 2%;
+}
+/* Footer end */
+/* About start */
+.about, .mission, .story, .whatWedo, .joinUs, .ourService, .whyChoose, .getStarted{
+    width: 95%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px 0 1px 0;
+    margin-top: 5%;
+}
+
+.marginTop{
+    padding-top: 6%;
+}
+
+.welcome-col, .vision-col, .story-col, .whatWedo-col, .joinUs-col, .ourService-col, .whyChoose-col, .getStarted-col{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.welcome-col, .story-col, .whatWedo-col, .ourService-col{
+    flex-basis: 35%;
+    margin: 12px 55px;
+}
+
+.welcome-col h3, .vision-col h3, .story-col h3, .whatWedo-col h3, .joinUs-col h3, .ourService-col h3, .whyChoose-col h3, .getStarted-col h3, .contactUs h3{
+    font-size: 2.5rem;
+    line-height: 52px;
+    font-weight: 600;
+    color: rgba(9, 11, 16, 1);
+    letter-spacing: 0.02em;
+}
+
+.welcome-col p, .vision-col p, .story-col p, .joinUs-col p{
+    font-size: 1rem;
+    line-height: 18.87px;
+    font-weight: 400;
+    color: rgba(9, 11, 16, 0.8);
+}
+
+.vision-col p, .story-col p, .joinUs-col p, .whyChoose-col p{
+    letter-spacing: 0.02em;
+}
+
+.welcome-col p{
+    letter-spacing: -0.04em;
+}
+
+/* Mission/Vision style starts */
+
+.vision-col{
+    flex-basis: 45.8%;
+    margin: 12px 32px;
+}
+
+/* Mission/Vision style ends */
+/* What we do starts */
+.whatWedo-col p, .whyChoose-col p{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: 0.02em;
+}
+.whatWedo-col p span, .whyChoose-col p span{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: rgba(9, 11, 16, 0.8);
+}
+/* What we do ends */
+
+/* Join us starts */
+.joinUs{
+    margin-bottom: -20px;
+}
+.joinUs-col{
+    flex-basis: 38%;
+    margin: 25px 50px;
+}
+.joinUs-col h5{
+    font-size: 0.96rem;
+    line-height: 20.8px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-top: 2%;
+    margin-bottom: -8%;
+    color: rgba(9, 11, 16, 0.8);
+}
+/* Join us ends */
+/* About ends */
+
+/* Our service & product starts */
+.ourService{
+    margin-top: 1%;
+}
+.ourProduct{
+    width: 95%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+}
+.ourProduct-row{
+    margin: 0 8%;
+    gap: 40px;
+    padding-bottom: 2%;
+}
+.prod{
+    width: 280px;
+    border: 1px solid rgba(160, 153, 153, 1);
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 0;
+    /* margin-left: 35px; */
+    margin-bottom: 40px;
+}
+.prod-image{
+    border: 1px solid rgba(230, 58, 36, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-content: center;
+    padding: 10px;
+    position: absolute;
+    top: -24px;
+}
+.prod-image img{
+    z-index: 4;
+}
+.prod-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+.prod-content h6{
+    font-size: 1.125rem;
+    line-height: 23.4px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(9, 11, 16, 1);
+}
+.prod-content p{
+    font-size: 1rem;
+    line-height: 20.8px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: rgba(9, 11, 16, 0.8);
+}
+.learn-btn{
+    padding: 20px 0 0 30px;
+}
+.learn-btn a{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 18.87px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: rgba(230, 58, 36, 0.8);
+}
+.learn-btn img{
+    height: 10px;
+}
+/* Our service & product ends */
+
+/* Why Choose starts */
+.whyChoose-col{
+    flex-basis: 46%;
+}
+.whyChoose{
+    margin-top: 2.5%;
+}
+.whyChoose-row{
+    margin-bottom: 0;
+    margin: 12px 55px;
+}
+
+.whyChoose-col img{
+    width: 100%;
+    padding-top: 10%;
+}
+
+/* Why Choose ends */
+
+/* Get Started starts */
+.getStarted{
+    margin-top: 2.5%;
+    margin-bottom: -1%;
+}
+.getStarted-col{
+    flex-basis: 36%;
+    margin: 0 55px;
+}
+.getStarted-col p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.02em;
+    color: rgba(9, 11, 16, 0.8);
+}
+.getStarted-content{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.getStarted-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.getStarted-contact a{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.02em;
+    color: rgba(9, 11, 16, 0.8);
+}
+/* Get Started ends */
+/* Style for Contact us Page starts */
+/* Contact us starts */
+
+.contactUs{
+    width: 41%;
+    margin: 3% auto;
+    padding: 2% 3%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.contactUs p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Contact us ends */
+/* Contact address stars */
+.contact-add{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 4%;
+    display: flex;
+    gap: 103px;
+}
+.left{
+    background-color: rgba(255, 255, 255, 1);
+    width: 46.5%;
+}
+.office{
+    display: flex;
+    gap: 23px;
+    padding: 6%;
+}
+.location img{
+    border: 1px solid rgba(230, 58, 36, 0.5);
+    padding: 16px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.office-address h6{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20.8px;
+    color: rgba(9, 11, 16, 1);
+}
+.office-address p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(9, 11, 16, 0.8);
+}
+.office-address span{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(9, 11, 16, 0.5);
+}
+.left-col{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.left-col p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20.8px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.left-socials ul li{
+    margin-top: 8px;
+    margin-left: 24px;
+}
+/* Contact address ends */
+/* Contact Form starts */
+.right{
+    width: 47%;
+    position: relative;
+}
+.right form{
+    width: 100%;
+    /* position: relative; */
+}
+.right input, .right textarea{
+    width: 100%;
+    padding: 15px 14px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+.right textarea{
+    margin-top: 40px;
+}
+.right span{
+    position: absolute;
+    left: 22%;
+    padding-top: 3%;
+    color: red;
+}
+/* .right form::before{
+    content: "*";
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    color: red;
+} */
+.right input::placeholder{
+    color: #ccc;
+}
+.right textarea::placeholder{
+    color: #ccc;
+}
+/* Style for right whatsapp Start */
+.right-whatsapp{
+    display: flex;
+    gap: 10px;
+    top: 92.5%;
+    left: 82%;
+    position: fixed;
+}
+
+#sappText{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px;
+    color: rgba(0, 138, 13, 1);
+    visibility: hidden;
+    transition: visibility 0.3s ease-in-out;
+}
+
+/* Style for right whatsapp end */
+
+/* .right button{
+    margin-left: 35%;
+} */
+/* Contact Form ends */
+
+/* Style for Contact Page ends */
