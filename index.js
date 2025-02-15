@@ -84,3 +84,28 @@ whatsappIcon.addEventListener("mouseover", () => {
 whatsappIcon.addEventListener("mouseout", () => {
   whatsappText.style.visibility = "hidden";
 });
+
+// Script for header start
+window.onresize = function() {
+  if (window.innerHeight > 500) {
+    document.getElementById("mobileNav").style.display = "none";
+    document.getElementById("bars").style.display = "none";
+  }else{
+    document.getElementById("bars").style.display = "inline"
+  }
+}
+
+function showMenu() {
+  document.getElementById("bars").style.display = "none";
+  document.getElementById("mobileNav").style.display = "inline";
+  // document.getElementById("cancelNav").style.display = "inline";
+};
+
+function hideMenu() {
+  document.getElementById("bars").style.display = "inline";
+  document.getElementById("mobileNav").style.display = "none";
+};
+// document.querySelector(".cancel-button").addEventListener("click", hideMenu);
+
+
+// Script for header end

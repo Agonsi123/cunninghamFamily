@@ -62,18 +62,18 @@ nav ul li a{
 #mobileNav{
     padding: 10px 0;
     display: none;
-    border: 1px solid red;
 }
 #cancelNav{
     float: right;
-    right: 10px;
+    margin-right: 38px;
 }
 .navbar .fa{
     display: block;
-    color: red;
+    color: rgba(230, 58, 36, 1);
     font-size: 1.4rem;
     cursor: pointer;
 }
+
 /* header end */
 /* Responsiveness for Header start */
 @media (max-width: 500px) {
@@ -88,20 +88,20 @@ nav ul li a{
     nav{
         text-align: left;
         flex: none;
-        background: #f0f0f0;
+        background: #fff;
         width: 91%;
         position: absolute;
         right: 16px;
-        top: 12%;
+        top: 6.5%;
     }
     nav ul{
-        padding: 10px;
+        padding: 9px;
     }
     .logo img{
         width: 60px;
     }
     header, nav .fa{
-        color: red;
+        color: rgba(230, 58, 36, 1);
         font-size: 1.4rem;
         cursor: pointer;
     }
@@ -222,7 +222,7 @@ nav ul li a{
         margin-top: 4%;
     }
     .hero-container h3{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: 33.6px;
     }
     .hero{
@@ -230,6 +230,7 @@ nav ul li a{
     }
     .hero img{
         width: 60%;
+        border-radius: 6px;
     }
     .hero .tourist{
         width: 70%;
@@ -320,19 +321,22 @@ nav ul li a{
     display: none;
 }
 
-/* Responsiveness for mobile view start */
+/* Key Services Responsiveness for mobile view start */
 @media (max-width: 500px) {
     .service{
         display: none;
     }
     .carousel-container{
         display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         width: 100%;
         margin: auto;
-        text-align: center;
+        align-items: center;
         background-color: rgba(255, 255, 255, 1);
         margin-top: 4%;
-        padding: 5% 0;
+        padding: 7% 0;
     }
     .carousel-container h2{
         font-size: 1.5rem;
@@ -340,11 +344,16 @@ nav ul li a{
         line-height: 33.6px;
         color: rgba(9, 11, 16, 0.8);
     }
+    .carousel-container img{
+        width: 70%;
+        border-radius: 6px;
+    }
     .carousel-text{
-        margin-top: 10px;
+        /* margin-top: 10px; */
+        text-align: center;
     }
     .carousel-text h6{
-        font-size: 1rem;
+        font-size: 1.375rem;
         /* font-weight: 400; */
         line-height: 25.94px;
         letter-spacing: -0.04em;
@@ -352,15 +361,17 @@ nav ul li a{
         margin-bottom: 5px;
     }
     .carousel-text p{
-        font-size: 0.875rem;
-        line-height: 18.51px;
+        width: 75%;
+        margin-left: 12%;
+        font-size: 1.25rem;
+        line-height: 20px;
         font-weight: 400;
         letter-spacing: -0.04em;
         color: rgba(9, 11, 16, 0.8);
     }
-    .indicator{
-        margin-top: 15px;
-    }
+    /* .indicator{
+        margin-top: 10px;
+    } */
     .indicator .dot{
         height: 10px;
         width: 10px;
@@ -374,7 +385,7 @@ nav ul li a{
     }
 }
 
-/* Responsiveness for mobile view end */
+/* Key Services Responsiveness for mobile view end */
 
 /* Key Services end */
 
@@ -396,6 +407,33 @@ nav ul li a{
     font-weight: 400;
     color: rgba(9, 11, 16, 0.7);
 }
+
+/* Product Responsiveness for mobile view start */
+@media (max-width: 500px) {
+    .row{
+        flex-direction: column;
+    }
+    .product{
+        width: 100%;
+        margin-top: 4%;
+        padding: 8% 0;
+    }
+    .product h2{
+        font-size: 1.5rem;
+        line-height: 33.6px;
+        font-weight: 600;
+    }
+    .product-col h6{
+        font-size: 1rem;
+        line-height: 25.94px;
+    }
+    .product-col p{
+        font-size: 0.875rem;
+        line-height: 16.51px;
+    }
+}
+
+/* Product Responsiveness for mobile view end */
 /* Premium product end */
 
 /* Choice starts */
@@ -445,6 +483,44 @@ nav ul li a{
 .choice-col img{
     height: 110px;
 }
+
+/* Choice Responsiveness for mobile view start */
+
+@media (max-width: 500px) {
+    .choice{
+        padding-bottom: 2%;
+    }
+    .choice-col{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .choice h2{
+        font-size: 1.5rem;
+        line-height: 33.6px;
+        font-weight: 600;
+        padding-top: 5%;
+    }
+    .choice p{
+        font-size: 1rem;
+        line-height: 18.87px;
+    }
+    .choice-col img{
+        height: 100%;
+    }
+    .global h6{
+        font-size: 1.125rem;
+        text-align: center;
+    }
+    .global p{
+        font-size: 1rem;
+        line-height: 18.87px;
+    }
+    .global img{
+        display: none;
+    }
+}
+
+/* Choice Responsiveness for mobile view end */
 /* Choice ends */
 /* Testimonial starts */
 
@@ -532,6 +608,83 @@ nav ul li a{
     }
 }
 
+/* Testimonial Responsiveness for mobile and tablet view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .testimonial{
+        padding: 20px 5%;
+    }
+    .testimonial h2{
+        font-size: 1.625rem;
+    }
+    .testimonial p{
+        font-size: 0.9375rem;
+    }
+    .scroll-images{
+        gap: 20px;
+    }
+    .scroll-images .testimonial-col{
+        width: 46%;
+        padding: 18px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimonial-col span{
+        font-size: 0.875rem;
+    }
+    /* .testifier{
+        flex-direction: column;
+    } */
+    .testifier .image img{
+        height: 45px;
+    }
+    .testifier-name h6{
+        font-size: 0.9375rem;
+    }
+    .testifier-name p{
+        font-size: 0.6875rem;
+    }
+}
+@media (max-width: 500px) {
+    .testimonial{
+        padding: 15px;
+        /* margin-top: 4%; */
+    }
+    .testimonial h2{
+        font-size: 1.375rem;
+        font-weight: 600;
+    }
+    .testimonial p{
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+    .scroll-images .testimonial-col{
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimonial-col span{
+        font-size: 0.75rem;
+    }
+    .testifier{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .testifier .image img{
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .testifier-name h6{
+        font-size: 0.875rem;
+    }
+    .testifier-name p{
+        font-size: 0.625rem;
+    }
+}
+
+/* Testimonial Responsiveness for mobile and tablet view end */
 /* Testimonial ends */
 
 /* Style for plan starts */
@@ -609,7 +762,54 @@ nav ul li a{
     font-weight: 600;
 }
 
+
+/* Plan Responsiveness for mobile view start */
+@media (max-width: 500px) {
+    .plan h2{
+        font-size: 1.5rem;
+        line-height: 33.6px;
+        font-weight: 600;
+        padding-top: 6%;
+    }
+    .plan-col{
+        align-items: center;
+        margin-top: 8%;
+    }
+    .plan-col img{
+        width: 75%;
+    }
+    .plan-col p{
+        width: 76%;
+        font-size: 1rem;
+    }
+    .plan-col p span{
+        font-size: 0.875rem;
+    }
+    .book{
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+    .book p{
+        font-size: 1rem;
+    }
+    .book-btn{
+        padding: 10px 16px;
+        margin-bottom: 4%;
+    }
+    .book-btn a{
+        font-size: 0.875rem;
+    }
+    .book-btn img{
+        height: 10px;
+        margin-top: 7px;
+    }
+}
+
+/* Plan Responsiveness for mobile view end */
+
 /* plan ends */
+
 /* Call to action starts */
 
 .cta{
@@ -631,6 +831,17 @@ nav ul li a{
     color: rgba(9, 11, 16, 1);
     letter-spacing: -0.04em;
 }
+
+/* Call to action Responsiveness for mobile view start */
+@media (max-width: 500px) {
+    .cta h1{
+        font-size: 1.8rem;
+        line-height: 33.6px;
+    }
+}
+
+/* Call to action Responsiveness for mobile view end */
+
 /* Call to action end */
 /* Footer start */
 footer{
@@ -706,7 +917,52 @@ footer h5{
     margin-top: -4%;
     padding-bottom: 2%;
 }
+
+/* Footer responsiveness starts */
+@media (max-width: 500px) {
+    .footer-row {
+        padding: 5% 8%; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align text */
+        gap: 18px;
+    }
+
+    .foot-one {
+        gap: 30px; /* Reduce gap between elements */
+    }
+
+    .footer-socials {
+        justify-content: center; /* Center social icons */
+        gap: 15px; /* Reduce space */
+    }
+
+    .footer-nav,
+    .support,
+    .email,
+    .email-col {
+        align-items: center; /* Center elements */
+    }
+    .footer-nav{
+        gap: 15px;
+        margin-bottom: 2%;
+    }
+
+    .phone-row {
+        flex-direction: column; /* Stack phone row */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .copy-right h5 {
+        margin-top: 0;
+        font-size: 1rem; /* Reduce font size */
+        padding-bottom: 4%;
+    }
+    
+}
+
+/* Footer responsiveness end */
+
 /* Footer end */
+
 /* About start */
 .about, .mission, .story, .whatWedo, .joinUs, .ourService, .whyChoose, .getStarted{
     width: 95%;
