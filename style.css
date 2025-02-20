@@ -65,7 +65,8 @@ nav ul li a{
 }
 #cancelNav{
     float: right;
-    margin-right: 38px;
+    margin-right: 32px;
+    margin-top: -13%;
 }
 .navbar .fa{
     display: block;
@@ -76,23 +77,37 @@ nav ul li a{
 
 /* header end */
 /* Responsiveness for Header start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .navbar{
+        width: 90%;
+    }
+    nav ul li{
+        padding: 6px 10px;
+    }
+    nav ul li a{
+        font-size: 0.875rem;
+    }
+    .header-btn{
+        padding: 10px;
+    }
+}
+
 @media (max-width: 500px) {
     .navbar{
         width: 100%;
     }
     nav ul li{
         display: block;
-        /* border-bottom: 0.01px solid red; */
     }
     
     nav{
         text-align: left;
         flex: none;
         background: #fff;
-        width: 91%;
+        width: 96.5%;
         position: absolute;
-        right: 16px;
-        top: 6.5%;
+        right: 6.5px;
+        top: 10%;
     }
     nav ul{
         padding: 9px;
@@ -108,15 +123,16 @@ nav ul li a{
     #bars{
         display: inline;
         position: absolute;
-        left: 80%;
-        top: 3%; 
+        left: 84%;
+        top: 5%; 
     }
     .btn{
         position: absolute;
-        top: 41.2%;
-        left: 4.5%;
-        width: 77.2%;
+        top: 42.8%;
+        left: 1.7%;
+        width: 78.2%;
         border-radius: 0;
+        padding: 16px 32px;
     }
     #navLinks, .btn{
         display: none;
@@ -134,7 +150,6 @@ nav ul li a{
     flex-direction: column;
     gap: 6px;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 .banner h1{
@@ -163,7 +178,6 @@ nav ul li a{
     text-align: center;
     padding: 4% 0;
     background-color: rgba(255, 255, 255, 1);
-    /* border: 1px solid red; */
 }
 .hero-container h3{
     font-size: 2rem;
@@ -202,6 +216,35 @@ nav ul li a{
 /* Hero section end */
 
 /* Responsiveness for banner and hero section start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .banner{
+        width: 90%;
+        padding: 3% 0;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+        line-height: 55px;
+    }
+    .banner h3{
+        font-size: 1.75rem;
+        line-height: 35px;
+    }
+    .hero-container{
+        width: 90%;
+        pad: 3% 0;
+    }
+    /* .hero-container h3{
+        font-size: 1.8rem;
+    } */
+    .hero img{
+        max-width: 100%;
+        height: auto;
+    }
+    .hero-btn{
+        padding: 14px 22px;
+        font-size: 0.9rem;
+    }
+}
 @media (max-width: 500px) {
     .banner{
         width: 100%;
@@ -237,7 +280,6 @@ nav ul li a{
     }
     .hero-btn{
         padding: 10px;
-        /* margin-top: 4%; */
     }
 }
 
@@ -248,7 +290,6 @@ nav ul li a{
     width: 95%;
     margin: auto;
     text-align: center;
-    /* border: 1px solid red; */
 }
 .service, .product, .plan{
     padding: 3% 0;
@@ -276,7 +317,6 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 4%;
-    /* border: 1px solid red; */
 }
 
 .services-col{
@@ -285,7 +325,6 @@ nav ul li a{
     flex-direction: column;
     gap: 16px;
     margin: 0 14px;
-    /* border: 1px solid blue; */
 }
 
 .services-col img, .product-col img{
@@ -322,6 +361,28 @@ nav ul li a{
 }
 
 /* Key Services Responsiveness for mobile view start */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .service, .product, .choice, .plan, .testimonial{
+        width: 90%;
+    }
+    .service h2, .product h2, .choice h2, .plan h2{
+        font-size: 2rem;
+    }
+    .row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-col{
+        flex-basis: 45%;
+        margin-bottom: 20px;
+        /* gap: 30px; */
+    }
+    .services-col img{
+        width: 100%;
+        height: auto;
+    }
+}
 @media (max-width: 500px) {
     .service{
         display: none;
@@ -349,12 +410,10 @@ nav ul li a{
         border-radius: 6px;
     }
     .carousel-text{
-        /* margin-top: 10px; */
         text-align: center;
     }
     .carousel-text h6{
         font-size: 1.375rem;
-        /* font-weight: 400; */
         line-height: 25.94px;
         letter-spacing: -0.04em;
         color: rgba(0, 0, 0, 1);
@@ -369,9 +428,6 @@ nav ul li a{
         letter-spacing: -0.04em;
         color: rgba(9, 11, 16, 0.8);
     }
-    /* .indicator{
-        margin-top: 10px;
-    } */
     .indicator .dot{
         height: 10px;
         width: 10px;
@@ -409,6 +465,13 @@ nav ul li a{
 }
 
 /* Product Responsiveness for mobile view start */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .product-col{
+        flex-basis: 45%;
+        padding: 20px;
+    }
+}
 @media (max-width: 500px) {
     .row{
         flex-direction: column;
@@ -486,6 +549,13 @@ nav ul li a{
 
 /* Choice Responsiveness for mobile view start */
 
+@media (min-width: 500px) and (max-width: 1200px) {
+    .choice-col{
+        flex-basis: 45%;
+        padding: 20px;
+    }
+}
+
 @media (max-width: 500px) {
     .choice{
         padding-bottom: 2%;
@@ -525,11 +595,13 @@ nav ul li a{
 /* Testimonial starts */
 
 .testimonial p{
+    width: 50%;
     font-size: 1.25rem;
     line-height: 26px;
     font-weight: 500;
     color: rgba(9, 11, 16, 0.7);
     margin-bottom: 4%;
+    margin-left: 25%;
     letter-spacing: 0.01em;
 }
 
@@ -620,40 +692,39 @@ nav ul li a{
         font-size: 0.9375rem;
     }
     .scroll-images{
-        gap: 20px;
+        gap: 10px;
     }
     .scroll-images .testimonial-col{
         width: 46%;
         padding: 18px;
-        flex-direction: column;
         text-align: center;
     }
     .testimonial-col span{
-        font-size: 0.875rem;
+        font-size: 0.7875rem;
     }
-    /* .testifier{
-        flex-direction: column;
-    } */
     .testifier .image img{
-        height: 45px;
+        height: 140px;
     }
     .testifier-name h6{
         font-size: 0.9375rem;
     }
     .testifier-name p{
-        font-size: 0.6875rem;
+        font-size: 0.7875rem;
+        line-height: 10px;
+        width: 100%;
     }
 }
 @media (max-width: 500px) {
     .testimonial{
         padding: 15px;
-        /* margin-top: 4%; */
     }
     .testimonial h2{
-        font-size: 1.375rem;
+        font-size: 1.3rem;
         font-weight: 600;
     }
     .testimonial p{
+        width: 100%;
+        margin-left: -2%;
         font-size: 0.875rem;
         line-height: 1.4;
     }
@@ -764,6 +835,22 @@ nav ul li a{
 
 
 /* Plan Responsiveness for mobile view start */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .plan-col{
+        flex-basis: 45%;
+    }
+    .book{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .book-btn{
+        justify-content: center;
+    }
+}
+
 @media (max-width: 500px) {
     .plan h2{
         font-size: 1.5rem;
@@ -833,6 +920,18 @@ nav ul li a{
 }
 
 /* Call to action Responsiveness for mobile view start */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .cta{
+        width: 90%;
+        padding: 60px 0;
+    }
+    .cta h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+}
+
 @media (max-width: 500px) {
     .cta h1{
         font-size: 1.8rem;
@@ -919,27 +1018,60 @@ footer h5{
 }
 
 /* Footer responsiveness starts */
+@media (min-width: 500px) and (max-width: 1200px) {
+    footer{
+        padding: 4% 6%;
+    }
+    .footer-row{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2%;
+        gap: 60px;
+    }
+    .foot-one{
+        gap: 15px;
+        align-items: center;
+    }
+    .footer-socials{
+        gap: 20px;
+    }
+    .footer-nav{
+        gap: 20px;
+    }
+    .support{
+        gap: 30px;
+    }
+    .email{
+        gap: 14px;
+    }
+    .phone-row{
+        gap: 30px;
+    }
+    .copy-right h5{
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 500px) {
     .footer-row {
-        padding: 5% 8%; /* Reduce padding for smaller screens */
-        text-align: center; /* Center align text */
+        padding: 5% 8%; 
+        text-align: center; 
         gap: 18px;
     }
 
     .foot-one {
-        gap: 30px; /* Reduce gap between elements */
+        gap: 30px; 
     }
-
     .footer-socials {
-        justify-content: center; /* Center social icons */
-        gap: 15px; /* Reduce space */
+        justify-content: center; 
+        gap: 15px; 
     }
 
     .footer-nav,
     .support,
     .email,
     .email-col {
-        align-items: center; /* Center elements */
+        align-items: center; 
     }
     .footer-nav{
         gap: 15px;
@@ -947,13 +1079,13 @@ footer h5{
     }
 
     .phone-row {
-        flex-direction: column; /* Stack phone row */
-        gap: 20px; /* Reduce gap */
+        flex-direction: column; 
+        gap: 20px; 
     }
 
     .copy-right h5 {
         margin-top: 0;
-        font-size: 1rem; /* Reduce font size */
+        font-size: 1rem; 
         padding-bottom: 4%;
     }
     
@@ -1010,6 +1142,48 @@ footer h5{
     letter-spacing: -0.04em;
 }
 
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .about, .mission, .story, .whatWedo, .joinUs, .ourService, .whyChoose, .getStarted{
+        width: 90%;
+        padding: 25px 0;
+        margin-top: 5%;
+    }
+    .welcome-col, .story-col, .whatWedo-col, .ourService-col{
+        flex-basis: 80%;
+        margin: 12px;
+    }
+    .welcome-col h3, .vision-col h3, .story-col h3, .whatWedo-col h3, .joinUs-col h3, .ourService-col h3, .whyChoose-col h3, .getStarted-col h3, .contactUs h3{
+        font-size: 2rem;
+        line-height: 32px;
+    }
+    .welcome-col p, .vision-col p, .story-col p, .joinUs-col p, .whyChoose-col p, .ourService-col p{
+        text-align: justify;
+    }
+}
+
+@media (max-width: 500px) {
+    .about, .mission, .story, .whatWedo, .joinUs, .ourService, .whyChoose, .getStarted{
+        width: 100%;
+        padding: 20px 0;
+        margin: 8% auto;
+    }
+    .welcome-col, .story-col, .whatWedo-col, .ourService-col{
+        margin: 20px;
+    }
+    .welcome-col h3, .vision-col h3, .story-col h3, .whatWedo-col h3, .joinUs-col h3, .ourService-col h3, .whyChoose-col h3, .getStarted-col h3, .contactUs h3{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .welcome-col p, .vision-col p, .story-col p, .joinUs-col p, .whyChoose-col p, .ourService-col p{
+        font-size: 0.875rem;
+        line-height: 18px;
+        text-align: justify;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
+
 /* Mission/Vision style starts */
 
 .vision-col{
@@ -1051,6 +1225,35 @@ footer h5{
     color: rgba(9, 11, 16, 0.8);
 }
 /* Join us ends */
+
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .vision-col{
+        flex-basis: 80%;
+        margin: 12px 15px;
+        text-align: justify;
+    }
+    .joinUs-col{
+        flex-basis: 80%;
+        margin: 12px;
+    }
+}
+@media (max-width: 500px) {
+    .whatWedo-col p, .whyChoose-col p{
+        font-size: 0.875rem;
+    }
+    .whatWedo-col p span, .whyChoose-col p span{
+        font-size: 0.7rem;
+    }
+    .joinUs-col{
+        margin: 10px 20px;
+    }
+    .joinUs-col h5{
+        font-size: 0.6rem;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
 /* About ends */
 
 /* Our service & product starts */
@@ -1068,7 +1271,7 @@ footer h5{
     padding-bottom: 2%;
 }
 .prod{
-    width: 280px;
+    width: 45%;
     border: 1px solid rgba(160, 153, 153, 1);
     padding: 20px 16px;
     display: flex;
@@ -1077,7 +1280,6 @@ footer h5{
     border-radius: 16px;
     position: relative;
     z-index: 0;
-    /* margin-left: 35px; */
     margin-bottom: 40px;
 }
 .prod-image{
@@ -1127,6 +1329,48 @@ footer h5{
 .learn-btn img{
     height: 10px;
 }
+.ourProductCarousel{
+    display: none;
+}
+
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .ourProductCarousel{
+        display: inline;
+        width: 90%;
+        
+    }
+    .prod{
+        width: 75%;
+        margin: 5% auto;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .indicator{
+        display: inline;
+    }
+    .ourProduct{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .ourProductCarousel{
+        display: inline;
+        width: 100%;
+    }
+    .prod{
+        width: 65%;
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .indicator{
+        margin-left: 35%;
+    }
+    .ourProduct{
+        display: none;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
 /* Our service & product ends */
 
 /* Why Choose starts */
@@ -1145,6 +1389,21 @@ footer h5{
     width: 100%;
     padding-top: 10%;
 }
+
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .whyChoose-col{
+        flex-basis: 95%;
+    }
+}
+@media (max-width: 500px) {
+    .whyChoose-col{
+        flex-basis: 95%;
+        margin: 0 -32px;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
 
 /* Why Choose ends */
 
@@ -1181,6 +1440,21 @@ footer h5{
     letter-spacing: 0.02em;
     color: rgba(9, 11, 16, 0.8);
 }
+
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .getStarted-col{
+        flex-basis: 80%;
+        margin: 12px 0;
+    }
+}
+@media (max-width: 500px) {
+    .getStarted-col{
+        margin: 20px;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
 /* Get Started ends */
 /* Style for Contact us Page starts */
 /* Contact us starts */
@@ -1202,8 +1476,29 @@ footer h5{
     color: rgba(0, 0, 0, 1);
 }
 
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .contactUs{
+        width: 60%;
+        padding: 3% 4%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactUs{
+        width: 80%;
+        padding: 5%;
+        margin: 5%;
+    }
+    .contactUs p{
+        font-size: 0.875rem;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
 /* Contact us ends */
-/* Contact address stars */
+/* Contact address starts */
 .contact-add{
     width: 95%;
     margin: auto;
@@ -1262,6 +1557,7 @@ footer h5{
     margin-top: 8px;
     margin-left: 24px;
 }
+
 /* Contact address ends */
 /* Contact Form starts */
 .right{
@@ -1270,7 +1566,6 @@ footer h5{
 }
 .right form{
     width: 100%;
-    /* position: relative; */
 }
 .right input, .right textarea{
     width: 100%;
@@ -1291,13 +1586,7 @@ footer h5{
     padding-top: 3%;
     color: red;
 }
-/* .right form::before{
-    content: "*";
-    position: absolute;
-    left: 20%;
-    top: 2%;
-    color: red;
-} */
+
 .right input::placeholder{
     color: #ccc;
 }
@@ -1326,9 +1615,54 @@ footer h5{
 
 /* Style for right whatsapp end */
 
-/* .right button{
-    margin-left: 35%;
-} */
 /* Contact Form ends */
 
+/* Responsiveness for tablet and mobile view start */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .contact-add{
+        flex-wrap: wrap;
+    }
+    .left, .right{
+        width: 95%;
+        margin: 12px;
+    }
+    .right-whatsapp{
+        left: 77%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-add{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .office{
+        gap: 10px;
+        padding: 4%;
+    }
+    .office-address h6, .office-address p, .office-address span, .left-col p{
+        font-size: 0.875rem;
+    }
+    .location img{
+        padding: 8px;
+        height: 10px;
+        width: 10px;
+    }
+    .left-col{
+        padding: 5%;
+    }
+    .left-socials ul li{
+        font-size: 0.875rem;
+        margin-top: 4px;
+    }
+    .left-socials ul li a{
+        font-size: 0.875rem;
+        text-decoration: none;
+    }
+}
+
+/* Responsiveness for tablet and mobile view end */
 /* Style for Contact Page ends */

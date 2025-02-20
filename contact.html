@@ -17,9 +17,9 @@
         <!-- Header start -->
             <header>
                 <div class="logo">
-                    <img src="./images/logo.svg" alt="">
+                    <img src="./images/logo2.svg" alt="">
                 </div>
-                <nav>
+                <nav class="nav-links" id="navLinks">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About Us</a></li>
@@ -27,9 +27,26 @@
                         <li><a class="active"  href="./contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
-                <a class="header-btn" href="https://wa.link/qj7f8v" target="_blank">Get In touch</a>
+                <a class="header-btn btn" href="https://wa.link/qj7f8v" target="_blank">Get In touch</a>
 
+                <!-- Mobile Navbar Start -->
+                <nav id="mobileNav">
+                    <div class="cancel-button">
+                        <i class="fa fa-times" id="cancelNav" onclick="hideMenu()" aria-hidden="true"></i>
+                    </div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./service.html">Services</a></li>
+                        <li><a class="active" href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
             </header>
+            <div>
+                <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
+            </div>
+
+            <!-- Mobile Navbar end -->
         </section>
         <!-- header end -->
         
@@ -120,7 +137,7 @@
         <div class="row footer-row">
             <div class="foot-one">
                 <div class="footer-logo">
-                    <img src="./images/logo.svg" alt="logo">
+                    <img src="./images/logo2.svg" alt="logo">
                 </div>
                 <div class="footer-socials">
                     <a href=""><img src="./images/twitter-fill.svg" alt="twitter"></a>
