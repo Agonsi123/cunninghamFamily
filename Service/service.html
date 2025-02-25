@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cunningham Family Overseas Business Transaction Company</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -15,40 +15,44 @@
     <div class="container">
         <section class="navbar">
         <!-- Header start -->
-            <header>
-                <div class="logo">
-                    <img src="./images/logo2.svg" alt="">
-                </div>
-                <nav class="nav-links" id="navLinks">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a class="active" href="./service.html">Services</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <a class="header-btn btn" href="https://wa.link/qj7f8v" target="_blank">Get In touch</a>
-
-                <!-- Mobile Navbar Start -->
-                <nav id="mobileNav">
-                    <div class="cancel-button">
-                        <i class="fa fa-times" id="cancelNav" onclick="hideMenu()" aria-hidden="true"></i>
-                    </div>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a class="active" href="./service.html">Services</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-
-            </header>
-            <div>
-                <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
+        <header class="navHeader">
+          <div class="logo">
+            <img src="../images/logo2.svg" alt="logo" />
+          </div>
+          <nav class="nav-links" id="navLinks">
+            <ul>
+              <li><a href="../Index/index.html">Home</a></li>
+              <li><a href="../About/about.html">About Us</a></li>
+              <li><a class="active" href="../Service/service.html">Services</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+            </ul>
+            <div class="get-in-btn">
+              <a class="header-btn" href="https://wa.link/qj7f8v" target="_blank">Get In touch</a>
             </div>
+          </nav>
+          <div class="handburger">
+            <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
+          </div>
 
-            <!-- Mobile Navbar end -->
-        </section>
+          <!-- Mobile Navbar Start -->
+          <div class="overlay">
+            <nav id="mobileNav">
+              <div class="cancel-button">
+                <i class="fa fa-times" id="cancelNav" onclick="hideMenu()" aria-hidden="true"></i>
+              </div>
+              <ul>
+                <li><a href="../Index/index.html">Home</a></li>
+                <li><a href="../About/about.html">About Us</a></li>
+                <li><a class="active" href="../Service/service.html">Services</a></li>
+                <li><a href="../Contact/contact.html">Contact Us</a></li>
+              </ul>
+              <a class="header-btn" href="https://wa.link/qj7f8v" target="_blank">Get In touch</a>
+            </nav>
+          </div>
+        </header>
+
+        <!-- Mobile Navbar end -->
+      </section>
         <!-- header end -->
         <!-- Our services & Product Start -->
         <section class="ourService">
@@ -60,7 +64,7 @@
                     </p>
                 </div>
                 <div class="ourService-col">
-                    <img src="./images/servPro.svg" alt="Services & Products">
+                    <img src="../images/servPro.svg" alt="Services & Products">
                 </div>
             </div>
         </section>
@@ -68,7 +72,7 @@
         <!-- Code for the Fixed WhatsApp Icon start-->
         <div class="right-whatsapp">
             <a href="https://wa.link/qj7f8v" target="_blank" id="sappText">WhatsApp us</a>
-            <a href="https://wa.link/qj7f8v" target="_blank" id="sappIcon"><img src="./images/Whatsapp.svg" alt="WhatsApp" /></a>
+            <a href="https://wa.link/qj7f8v" target="_blank" id="sappIcon"><img src="../images/Whatsapp.svg" alt="WhatsApp" /></a>
         </div>
         <!-- Code for the Fixed WhatsApp Icon end-->    
         <!-- Our product starts -->
@@ -76,7 +80,7 @@
             <div class="row ourProduct-row">
                 <div class="prod">
                     <div class="prod-image">
-                        <img src="./images/importIcon.svg" alt="icon">
+                        <img src="../images/importIcon.svg" alt="icon">
                     </div>
                     <div class="prod-content">
                         <h6>Importation</h6>
@@ -85,12 +89,12 @@
                     </div>
                     <div class="learn-btn">
                         <a href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                        <img src="./images/redArrow.svg" alt="">
+                        <img src="../images/redArrow.svg" alt="">
                     </div>
                 </div>
                 <div class="prod">
                     <div class="prod-image">
-                        <img src="./images/truckIcon.svg" alt="icon">
+                        <img src="../images/truckIcon.svg" alt="icon">
                     </div>
                     <div class="prod-content">
                         <h6>Trucks & Vehicle Spare Parts</h6>
@@ -99,12 +103,12 @@
                     </div>
                     <div class="learn-btn">
                         <a href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                        <img src="./images/redArrow.svg" alt="">
+                        <img src="../images/redArrow.svg" alt="">
                     </div>
                 </div>
                 <div class="prod">
                     <div class="prod-image">
-                        <img src="./images/ecommerceIcon.svg" alt="icon">
+                        <img src="../images/ecommerceIcon.svg" alt="icon">
                     </div>
                     <div class="prod-content">
                         <h6>E-Commerce Solutions</h6>
@@ -113,14 +117,14 @@
                     </div>
                     <div class="learn-btn">
                         <a href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                        <img src="./images/redArrow.svg" alt="">
+                        <img src="../images/redArrow.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="row ourProduct-row">
                 <div class="prod">
                 <div class="prod-image">
-                    <img src="./images/e-bankIcon.svg" alt="icon">
+                    <img src="../images/e-bankIcon.svg" alt="icon">
                 </div>
                 <div class="prod-content">
                     <h6>E-Banking & Payment Services</h6>
@@ -129,12 +133,12 @@
                 </div>
                 <div class="learn-btn">
                     <a href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                    <img src="./images/redArrow.svg" alt="">
+                    <img src="../images/redArrow.svg" alt="">
                 </div>
                 </div>
                 <div class="prod">
                     <div class="prod-image">
-                        <img src="./images/realestateIcon.svg" alt="icon">
+                        <img src="../images/realestateIcon.svg" alt="icon">
                     </div>
                     <div class="prod-content">
                         <h6>Real Estate</h6>
@@ -143,12 +147,12 @@
                     </div>
                     <div class="learn-btn">
                         <a href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                        <img src="./images/redArrow.svg" alt="">
+                        <img src="../images/redArrow.svg" alt="">
                     </div>
                 </div>
                 <div class="prod">
                     <div class="prod-image">
-                        <img src="./images/tourismIcon.svg" alt="icon">
+                        <img src="../images/tourismIcon.svg" alt="icon">
                     </div>
                     <div class="prod-content">
                         <h6>Tourism Services</h6>
@@ -157,7 +161,7 @@
                     </div>
                     <div class="learn-btn">
                         <a href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                        <img src="./images/redArrow.svg" alt="">
+                        <img src="../images/redArrow.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -167,7 +171,7 @@
         <section class="ourProductCarousel">
             <div class="prod">
                 <div class="prod-image">
-                    <img id="image1" src="./images/importIcon.svg" alt="icon">
+                    <img id="image1" src="../images/importIcon.svg" alt="icon">
                 </div>
                 <div class="prod-content">
                     <h6 id="title">Importation</h6>
@@ -176,16 +180,16 @@
                 </div>
                 <div class="learn-btn">
                     <a id="text" href="https://wa.link/qj7f8v" target="_blank">Learn more</a>
-                    <img id="image2" src="./images/redArrow.svg" alt="">
+                    <img id="image2" src="../images/redArrow.svg" alt="">
                 </div>
             </div>
-            <div class="indicator">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <div class="indicator proIndicator">
+                <span class="dot pDot active"></span>
+                <span class="dot pDot"></span>
+                <span class="dot pDot"></span>
+                <span class="dot pDot"></span>
+                <span class="dot pDot"></span>
+                <span class="dot pDot"></span>
             </div>
         </section>
         <!-- Mobile view our product end -->
@@ -221,7 +225,7 @@
                     </p>
                 </div>
                 <div class="whyChoose-col">
-                    <img src="./images/whyChooseUs.svg" alt="What we do">
+                    <img src="../images/whyChooseUs.svg" alt="What we do">
                 </div>
             </div>
         </section>
@@ -241,7 +245,7 @@
                     </div>
                 </div>
                 <div class="getStarted-col">
-                    <img src="./images/getStarted.svg" alt="Get Started">
+                    <img src="../images/getStarted.svg" alt="Get Started">
                 </div>
             </div>
         </section>
@@ -256,20 +260,20 @@
         <div class="row footer-row">
             <div class="foot-one">
                 <div class="footer-logo">
-                    <img src="./images/logo2.svg" alt="logo">
+                    <img src="../images/logo2.svg" alt="logo">
                 </div>
                 <div class="footer-socials">
-                    <a href=""><img src="./images/twitter-fill.svg" alt="twitter"></a>
-                    <a href="#"><img src="./images/instagram-fill.svg" alt="instagram"></a>
-                    <a href="#"><img src="./images/facebook-fill.svg" alt="facebook"></a>
+                    <a href=""><img src="../images/twitter-fill.svg" alt="twitter"></a>
+                    <a href="#"><img src="../images/instagram-fill.svg" alt="instagram"></a>
+                    <a href="#"><img src="../images/facebook-fill.svg" alt="facebook"></a>
                     <!-- <a href="#"><img src="./images/linkedin-fill 1.svg" alt="linkedIn"></a> -->
                 </div>
             </div>
             <div class="footer-nav">
                 <h5>Company Info</h5>
-                <a href="./service.html"><p>Services</p></a>
-                <a href="./about.html"><p>About Us</p></a>
-                <a href="./contact.html"><p>Contact Us</p></a>
+                <a href="../Service/service.html"><p>Services</p></a>
+                <a href="../About/about.html"><p>About Us</p></a>
+                <a href="../Contact/contact.html"><p>Contact Us</p></a>
             </div>
             <div class="support">
                 <div class="email">
@@ -314,18 +318,7 @@
     <!-- Footer end -->
     <!-- JavaScript link -->
 
-    <script>
-        const whatsappText = document.getElementById("sappText");
-        const whatsappIcon = document.getElementById("sappIcon");
-
-        whatsappIcon.addEventListener("mouseover", () => {
-            whatsappText.style.visibility = "visible";
-        });
-
-        whatsappIcon.addEventListener("mouseout", () => {
-            whatsappText.style.visibility = "hidden";
-        });
-    </script>
-    <script src="./index.js"></script>
+    
+    <script src="./service.js"></script>
 </body>
 </html>
