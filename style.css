@@ -1023,8 +1023,8 @@ footer {
 
 .footer-logo img {
   background-color: rgba(251, 251, 248, 1);
-  /* width: 100%; */
-  /* max-width: 60px; */
+  width: 100%;
+  height: 43.31px;
 }
 
 .footer-socials,
@@ -1105,10 +1105,10 @@ footer p {
   }
   .foot-one {
     gap: 15px;
-    align-items: center;
   }
+  
   .footer-socials {
-    gap: 20px;
+    gap: 15px;
   }
   .footer-nav {
     gap: 20px;
@@ -1733,13 +1733,6 @@ footer p {
 .right textarea {
   margin-top: 40px;
 }
-/* .right span {
-  position: absolute;
-  left: 22%;
-  padding-top: 3%;
-  color: red;
-  display: inline;
-} */
 
 .right input::placeholder {
   color: #ccc;
@@ -1748,9 +1741,6 @@ footer p {
   color: #ccc;
 }
 /* styling the asterisks inside placeholder using JavaScript */
-/* .required[data-placeholder] {
-  color: #888;
-} */
 
 .required::placeholder::before {
   content: attr(placeholder);
@@ -1766,9 +1756,6 @@ footer p {
   content: "";
 }
 
-/* .red-asterisk{
-  color: red;
-} */
 
 /* Style for right whatsapp Start */
 .right-whatsapp {
@@ -1821,6 +1808,9 @@ footer p {
   .left,
   .right {
     width: 100%;
+  }
+  .right-whatsapp {
+    left: 53%;
   }
   .office {
     gap: 10px;
