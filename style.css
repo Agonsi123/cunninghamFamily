@@ -126,7 +126,7 @@ body {
 
 /* header end */
 /* Responsiveness for Header start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .navbar {
     width: 90%;
   }
@@ -145,7 +145,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .navbar {
     width: 100%;
   }
@@ -246,7 +246,7 @@ body {
 /* Hero section end */
 
 /* Responsiveness for banner and hero section start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .banner {
     width: 90%;
     padding: 3% 0;
@@ -278,7 +278,7 @@ body {
     font-size: 0.9rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .banner {
     width: 100%;
     padding: 5% 0;
@@ -419,7 +419,7 @@ footer {
 
 /* Key Services Responsiveness for mobile view start */
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .service,
   .product,
   .choice,
@@ -446,7 +446,7 @@ footer {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .service {
     display: none;
   }
@@ -529,13 +529,13 @@ footer {
 
 /* Product Responsiveness for mobile view start */
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .product-col {
     flex-basis: 45%;
     padding: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .row {
     flex-direction: column;
   }
@@ -613,15 +613,16 @@ footer {
 
 /* Choice Responsiveness for mobile view start */
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .choice-col {
     flex-basis: 45%;
     padding: 20px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .choice {
+    width: 100%;
     padding-bottom: 2%;
   }
   .choice-col {
@@ -745,7 +746,7 @@ footer {
 }
 
 /* Testimonial Responsiveness for mobile and tablet view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .testimonial {
     padding: 20px 5%;
   }
@@ -778,9 +779,10 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .testimonial {
-    padding: 15px;
+    width: 100%;
+    /* padding: 15px; */
   }
   .testimonial h2 {
     font-size: 1.3rem;
@@ -899,7 +901,7 @@ footer {
 
 /* Plan Responsiveness for mobile view start */
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .plan-col {
     flex-basis: 45%;
   }
@@ -914,7 +916,10 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .plan{
+    width: 100%;
+  }
   .plan h2 {
     font-size: 1.5rem;
     line-height: 33.6px;
@@ -985,7 +990,7 @@ footer {
 
 /* Call to action Responsiveness for mobile view start */
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .cta {
     width: 90%;
     padding: 60px 0;
@@ -996,7 +1001,10 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .cta{
+    width: 100%;
+  }
   .cta h1 {
     font-size: 1.8rem;
     line-height: 33.6px;
@@ -1093,7 +1101,7 @@ footer p {
 }
 
 /* Footer responsiveness starts */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   footer {
     padding: 4% 6%;
   }
@@ -1127,7 +1135,7 @@ footer p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .footer-row {
     padding: 5% 8%;
     text-align: center;
@@ -1248,7 +1256,7 @@ footer p {
 }
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .about,
   .mission,
   .story,
@@ -1290,7 +1298,7 @@ footer p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .about,
   .mission,
   .story,
@@ -1380,7 +1388,7 @@ footer p {
 /* Join us ends */
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .vision-col {
     flex-basis: 80%;
     margin: 12px 15px;
@@ -1391,7 +1399,7 @@ footer p {
     margin: 12px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .whatWedo-col p,
   .whyChoose-col p {
     font-size: 0.875rem;
@@ -1487,7 +1495,7 @@ footer p {
 }
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .ourProductCarousel {
     display: inline;
     width: 90%;
@@ -1504,7 +1512,7 @@ footer p {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .ourProductCarousel {
     display: inline;
     width: 100%;
@@ -1515,7 +1523,7 @@ footer p {
     background-color: rgba(255, 255, 255, 1);
   }
   .proIndicator {
-    margin-left: 35%;
+    margin-left: 40%;
   }
   .ourProduct {
     display: none;
@@ -1543,12 +1551,12 @@ footer p {
 }
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .whyChoose-col {
     flex-basis: 95%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .whyChoose-col {
     flex-basis: 95%;
     margin: 0 -32px;
@@ -1594,13 +1602,13 @@ footer p {
 }
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .getStarted-col {
     flex-basis: 80%;
     margin: 12px 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .getStarted-col {
     margin: 20px;
   }
@@ -1629,7 +1637,7 @@ footer p {
 }
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .contactUs {
     width: 60%;
     padding: 3% 4%;
@@ -1637,7 +1645,7 @@ footer p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .contactUs {
     width: 80%;
     padding: 5%;
@@ -1782,7 +1790,7 @@ footer p {
 /* Contact Form ends */
 
 /* Responsiveness for tablet and mobile view start */
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .contact-add {
     flex-wrap: wrap;
   }
@@ -1794,13 +1802,9 @@ footer p {
   .right-whatsapp {
     left: 77%;
   }
-  /* .right span {
-    left: 18%;
-    padding-top: 2%;
-  } */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .contact-add {
     flex-direction: column;
     gap: 20px;
@@ -1838,10 +1842,6 @@ footer p {
     font-size: 0.875rem;
     text-decoration: none;
   }
-  /* .right span.astericks {
-    left: 36%;
-    display: inline;
-  } */
 }
 
 /* Responsiveness for tablet and mobile view end */
