@@ -74,7 +74,7 @@ window.addEventListener("DOMContentLoaded", setAutoSlide);
 
 // Script for header start
 window.onresize = function () {
-  if (window.innerHeight > 500) {
+  if (window.innerHeight > 700) {
     document.querySelector(".overlay").style.display = "none";
   } else {
     document.querySelector(".overlay").style.display = "flex";

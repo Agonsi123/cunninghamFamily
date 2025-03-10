@@ -1,6 +1,6 @@
 // Script for header start
 window.onresize = function () {
-  if (window.innerHeight > 500) {
+  if (window.innerHeight > 700) {
     document.querySelector(".overlay").style.display = "none";
   } else {
     document.querySelector(".overlay").style.display = "flex";
@@ -129,11 +129,11 @@ const whatsappText = document.getElementById("sappText");
 const whatsappIcon = document.getElementById("sappIcon");
 
 whatsappIcon.addEventListener("mouseover", () => {
-    whatsappText.style.visibility = "visible";
+  whatsappText.style.visibility = "visible";
 });
 
 whatsappIcon.addEventListener("mouseout", () => {
-    whatsappText.style.visibility = "hidden";
+  whatsappText.style.visibility = "hidden";
 });
 
 // Script for WhatsApp end
